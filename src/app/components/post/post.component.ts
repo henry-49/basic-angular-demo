@@ -7,9 +7,7 @@ AfterContentInit,AfterContentChecked, AfterViewInit, AfterViewChecked,
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit,
- AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked,
- OnDestroy{
+export class PostComponent implements OnInit{
   // setting alais for as img
  @Input('img') postImg = '';
 
@@ -26,37 +24,37 @@ export class PostComponent implements OnInit,
    console.log("ngOnInit() is called");
  }
 
- ngOnChanges(): void {
-   //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-   //Add '${implements OnChanges}' to the class.
-   console.log("ngOnChanges() is called");
- }
+//  ngOnChanges(): void {
+//    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+//    //Add '${implements OnChanges}' to the class.
+//    console.log("ngOnChanges() is called");
+//  }
 
- ngDoCheck(): void {
-   //Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.
-   //Add 'implements DoCheck' to the class.
-   console.log("ngDoCheck() is called");
- }
+//  ngDoCheck(): void {
+//    //Called every time that the input properties of a component or a directive are checked. Use it to extend change detection by performing a custom check.
+//    //Add 'implements DoCheck' to the class.
+//    console.log("ngDoCheck() is called");
+//  }
 
- ngAfterContentChecked() {
-     console.log("ngAfterContentChecked() is called");
- }
+//  ngAfterContentChecked() {
+//      console.log("ngAfterContentChecked() is called");
+//  }
 
- ngAfterContentInit(){
-     console.log("ngAfterContentInit() is called");
- }
+//  ngAfterContentInit(){
+//      console.log("ngAfterContentInit() is called");
+//  }
 
- ngAfterViewChecked() {
-     console.log("ngAfterViewChecked() is called");
- }
+//  ngAfterViewChecked() {
+//      console.log("ngAfterViewChecked() is called");
+//  }
 
- ngAfterViewInit() {
-     console.log("ngAfterViewInit() is called");
- }
+//  ngAfterViewInit() {
+//      console.log("ngAfterViewInit() is called");
+//  }
 
- ngOnDestroy(){
-   //Called once, before the instance is destroyed.
-   //Add 'implements OnDestroy' to the class.
-   console.log("ngOnDestroy() is called");
- }
+//  ngOnDestroy(){
+//    //Called once, before the instance is destroyed.
+//    //Add 'implements OnDestroy' to the class.
+//    console.log("ngOnDestroy() is called");
+//  }
 }
